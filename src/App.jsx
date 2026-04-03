@@ -43,7 +43,6 @@ function App() {
         const errJson = JSON.parse(errText);
         errorMessage = errJson.error || errJson.message || errorMessage;
       } catch (e) {
-        // Fallback to text if not JSON
         errorMessage = errText || errorMessage;
       }
       throw new Error(errorMessage);
