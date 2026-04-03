@@ -64,7 +64,7 @@ function App() {
 
     setIsGenerating(true);
     setImageUrl(null); // Clear previous image
-    setError(null);    // Clear previous error
+    setError(null);
 
     try {
       const selectedStyle = STYLE_PRESETS.find(s => s.id === stylePreset);
